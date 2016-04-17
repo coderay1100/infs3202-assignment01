@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Pickadate lib -->
+    <link rel="stylesheet" href="/js/pickadate/lib/themes/default.css">
+    <link rel="stylesheet" href="/js/pickadate/lib/themes/default.date.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/lib/animate.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#main-navbar">
+        &#9776;
+      </button>
+      <a class="navbar-brand" href="/">Tmates</a>
+      <div class="collapse navbar-toggleable-xs" id="main-navbar">
+        <ul class="nav navbar-nav pull-sm-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="partner/">Sign in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="searchbar">
+      <div class="container">
+        <div class="row">
+          <form action="#">
+            <div class="col-lg-4">
+              <input type="text" id="cityinput" name="city" class="form-control" placeholder="Where do you wanna go?">
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <div class="input-group date" id='datetimepicker1'>
+                  <input type='text' class="form-control dpicker" placeholder="Check in" />
+                  <span class="input-group-addon">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <div class="input-group date" id='datetimepicker1'>
+                  <input type='text' class="form-control dpicker" placeholder="Check out" />
+                  <span class="input-group-addon">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <input type="submit" class="btn btn-success" value="Find Tmates">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="tmates">
+      <div class="heading">
+        <h1>These Tmates are available in 
+        <select class="form-control form-inline c-select" name="" id="selectCity">
+          <option value="" id="cityname" selected>Brisbane</option>
+        </select></h1>
+      </div>
+      <div class="tmates-list">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <!-- Tmate -->
+              <div class="card">
+                <img src="img/rastra.png" alt="tmate" class="card-img-top">
+                <div class="card-block">
+                  <h6>Alan Leavitt</h6>
+                  <div>
+                    Reviews: 
+                    <a href="#">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                      (6)
+                    </a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ad excepturi numquam sequi quisquam ex nam cum sed neque accusamus perspiciatis modi totam non quas, laudantium earum minima, quam mollitia.</p>
+                  <div class="row">
+                    <div class="col-sm-4"><a href="" class="btn btn-danger-outline" data-toggle="tooltip" data-placement="bottom" title="View profile"><i class="fa fa-eye"></i></a></div>
+                    <div class="col-sm-4"><a href="" class="btn btn-warning-outline" data-toggle="tooltip" data-placement="bottom" title="Add to my list"><i class="fa fa-plus"></i></a></div>
+                    <div class="col-sm-4"><a href="" class="btn btn-success-outline" data-toggle="tooltip" data-placement="bottom" title="Choose this Tmate"><i class="fa fa-check"></i></a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Tmate -->
+            </div>
+            <div class="col-lg-3">
+              <!-- Tmate -->
+              <div class="card">
+                <img src="img/sergio.png" alt="tma" class="card-img-top">
+                <div class="card-block">
+                  <h6>Jian Yang</h6>
+                  <div>
+                    Reviews: 
+                    <a href="#">
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      (0)
+                    </a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ad excepturi numquam sequi quisquam ex nam cum sed neque accusamus perspiciatis modi totam non quas, laudantium earum minima, quam mollitia.</p>
+                  <div class="row">
+                    <div class="col-sm-4"><a href="" class="btn btn-danger-outline" data-toggle="tooltip" data-placement="bottom" title="View profile"><i class="fa fa-eye"></i></a></div>
+                    <div class="col-sm-4"><a href="" class="btn btn-warning-outline" data-toggle="tooltip" data-placement="bottom" title="Add to my list"><i class="fa fa-plus"></i></a></div>
+                    <div class="col-sm-4"><a href="" class="btn btn-success-outline" data-toggle="tooltip" data-placement="bottom" title="Choose this Tmate"><i class="fa fa-check"></i></a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Tmate -->
+            </div>
+            <div class="col-lg-3">
+              <!-- Tmate -->
+              <div class="card">
+                <img src="img/adit.png" alt="tmate" class="card-img-top">
+                <div class="card-block">
+                  <h6>Buk Lau</h6>
+                  <div>
+                    Reviews: 
+                    <a href="#">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      (10)
+                    </a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ad excepturi numquam sequi quisquam ex nam cum sed neque accusamus perspiciatis modi totam non quas, laudantium earum minima, quam mollitia.</p>
+                  <div class="row">
+                    <div class="col-sm-4"><a href="" class="btn btn-danger-outline" data-toggle="tooltip" data-placement="bottom" title="View profile"><i class="fa fa-eye"></i></a></div>
+                    <div class="col-sm-4"><a href="" class="btn btn-warning-outline" data-toggle="tooltip" data-placement="bottom" title="Add to my list"><i class="fa fa-plus"></i></a></div>
+                    <div class="col-sm-4"><a href="" class="btn btn-success-outline" data-toggle="tooltip" data-placement="bottom" title="Choose this Tmate"><i class="fa fa-check"></i></a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Tmate -->
+            </div>
+            <div class="col-lg-3">
+              <!-- Tmate -->
+              <div class="card">
+                <img src="img/pretty.png" alt="tmate" class="card-img-top">
+                <div class="card-block">
+                  <h6>Leela Singh</h6>
+                  <div>
+                    Reviews: 
+                    <a href="#">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                      (3)
+                    </a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ad excepturi numquam sequi quisquam ex nam cum sed neque accusamus perspiciatis modi totam non quas, laudantium earum minima, quam mollitia.</p>
+                  <div class="row">
+                    <div class="col-sm-4"><a href="" class="btn btn-danger-outline" data-toggle="tooltip" data-placement="bottom" title="View profile"><i class="fa fa-eye"></i></a></div>
+                    <div class="col-sm-4"><a href="" class="btn btn-warning-outline" data-toggle="tooltip" data-placement="bottom" title="Add to my list"><i class="fa fa-plus"></i></a></div>
+                    <div class="col-sm-4"><a href="" class="btn btn-success-outline" data-toggle="tooltip" data-placement="bottom" title="Choose this Tmate"><i class="fa fa-check"></i></a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Tmate -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">Copyright &copy; 2016 Raibima Putra</div>
+          <div class="col-md-2">
+            <h6>Our product</h6>
+            <ul class="list-unstyled">
+              <li><a href="">Features</a></li>
+              <li><a href="">Solutions</a></li>
+              <li><a href="">Plans</a></li>
+              <li><a href="">Sign in</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Our team</h6>
+            <ul class="list-unstyled">
+              <li><a href="">About</a></li>
+              <li><a href="">Highlights</a></li>
+              <li><a href="">Investors</a></li>
+              <li><a href="">Partners</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2"><h6>Other things</h6>
+            <ul class="list-unstyled">
+              <li><a href="">Career</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="/js/pickadate/lib/picker.js"></script>
+    <script src="/js/pickadate/lib/picker.date.js"></script>
+    <script>
+
+      // Source: http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)", "i"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      $.fn.extend({
+        animateCss: function (animationName) {
+          var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+          $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+          });
+        }
+      });
+
+      $('[data-toggle="tooltip"]').tooltip();
+
+      $(function() {
+        $('.dpicker').pickadate();
+
+        document.getElementById('cityname').innerHTML = getParameterByName('city');
+
+        $('#selectCity').click(function(e) {
+          e.preventDefault();
+          location.href = '#cityInput';
+          $('#cityinput').focus().animateCss('wobble');
+        });
+      });
+    </script>
+  </body>
+</html>
